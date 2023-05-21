@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="BrushSample.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Rectangle
+                WidthRequest="80"
+                HeightRequest="80"
+            >
+                <Rectangle.Background>
+                    <SolidColorBrush Color="Green"/>
+                </Rectangle.Background>
+            </Rectangle>
+
+
+            <Rectangle
+                WidthRequest="80"
+                HeightRequest="80"
+            >
+                <Rectangle.Background>
+                    <LinearGradientBrush EndPoint="1,0">
+                        <GradientStop Color="Yellow"
+                          Offset="0.0" />
+                        <GradientStop Color="Green"
+                          Offset="1.1" />
+                    </LinearGradientBrush>
+                </Rectangle.Background>
+            </Rectangle>
+            
+            <Rectangle
+                WidthRequest="80"
+                HeightRequest="80"
+            >
+                <Rectangle.Background>
+                    <LinearGradientBrush EndPoint="1,1">
+                        <GradientStop Color="Yellow"
+                          Offset="0.0" />
+                        <GradientStop Color="Green"
+                          Offset="1.1" />
+                    </LinearGradientBrush>
+                </Rectangle.Background>
+            </Rectangle>
+            
+            <Rectangle
+                WidthRequest="80"
+                HeightRequest="80"
+            >
+                <Rectangle.Background>
+                    <RadialGradientBrush>
+                        <GradientStop Color="Green"
+                          Offset="0.1" />
+                        <GradientStop Color="Yellow"
+                          Offset="1.0" />
+                    </RadialGradientBrush>
+                </Rectangle.Background>
+            </Rectangle>
+            
+            <Rectangle
+                WidthRequest="80"
+                HeightRequest="80"
+            >
+                <Rectangle.Background>
+                    <RadialGradientBrush Center="0, 0">
+                        <GradientStop Color="Green"
+                          Offset="0.1" />
+                        <GradientStop Color="Yellow"
+                          Offset="1.0" />
+                    </RadialGradientBrush>
+                </Rectangle.Background>
+            </Rectangle>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

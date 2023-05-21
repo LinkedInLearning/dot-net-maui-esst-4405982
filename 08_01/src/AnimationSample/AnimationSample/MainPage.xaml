@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AnimationSample.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+            <Image
+                x:Name="image"
+                Source="dotnet_bot.png"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="200"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="拡大"
+                Clicked="OnScalingClicked"
+                HorizontalOptions="Center" />
+            
+            <Button
+                Text="回転"
+                Clicked="OnRotateToClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="フェード"
+                Clicked="OnFadeClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="初期化"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnInitialClicked"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

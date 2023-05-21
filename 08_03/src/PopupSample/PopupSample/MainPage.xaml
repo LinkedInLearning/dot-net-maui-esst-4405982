@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PopupSample.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center">
+
+
+            <Button
+                Text="アラート"
+                Clicked="OnAlertClicked"
+                HorizontalOptions="Center" />
+            
+            <Button
+                Text="2ボタンアラート"
+                Clicked="OnYesNoAlertClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                Text="アクションシート"
+                Clicked="OnActionSheetClicked"
+                HorizontalOptions="Center" />
+
+
+            <Button
+                Text="プロンプト"
+                Clicked="OnPromptClicked"
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
