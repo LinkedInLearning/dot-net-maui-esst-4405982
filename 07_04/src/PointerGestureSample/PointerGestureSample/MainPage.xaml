@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PointerGestureSample.MainPage">
+    <VerticalStackLayout>
+        <Image
+            x:Name="image"
+            Source="dotnet_bot.png"
+            SemanticProperties.Description="Cute dot net bot waving hi to you!"
+            HeightRequest="200"
+            HorizontalOptions="Center">
+            <Image.GestureRecognizers>
+                <PointerGestureRecognizer PointerEntered="PointerGestureRecognizer_PointerEntered"
+                                      PointerExited="PointerGestureRecognizer_PointerExited"
+                                      PointerMoved="PointerGestureRecognizer_PointerMoved" />
+            </Image.GestureRecognizers>
+        </Image>
+        
+        <Label Text="X="  HorizontalOptions="Center"/>
+        <Label x:Name="xpoint" Text=""  HorizontalOptions="Center"/>
+        <Label Text="Y=" HorizontalOptions="Center"/>
+        <Label x:Name="ypoint" Text="" HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DragAndDropSample.MainPage">
+
+    <ScrollView>
+        <AbsoluteLayout>
+
+            <Label
+                x:Name="label"
+                BackgroundColor="Blue"
+                HeightRequest="200"
+                Text="sample"
+                WidthRequest="200">
+                <Label.GestureRecognizers>
+                    <DragGestureRecognizer
+                        CanDrag="True"
+                        DragStarting="DragGestureRecognizer_DragStarting"
+                    />
+                </Label.GestureRecognizers>
+            </Label>
+            
+            <Rectangle
+               AbsoluteLayout.LayoutBounds="200, 200, 100, 100"
+               Fill="Red">
+                <Rectangle.GestureRecognizers>
+                    <DropGestureRecognizer Drop="DropGestureRecognizer_Drop" AllowDrop="True"/>
+                </Rectangle.GestureRecognizers>
+            </Rectangle>
+        </AbsoluteLayout>
+    </ScrollView>
+
+</ContentPage>

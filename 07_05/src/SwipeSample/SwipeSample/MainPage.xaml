@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SwipeSample.MainPage">
+    <VerticalStackLayout>
+        <Image
+        Source="dotnet_bot.png"
+        SemanticProperties.Description="Cute dot net bot waving hi to you!"
+        HeightRequest="200"
+        HorizontalOptions="Center" >
+            <Image.GestureRecognizers>
+                <SwipeGestureRecognizer Direction="Left" Swiped="SwipeGestureRecognizer_Swiped"/>
+                <SwipeGestureRecognizer Direction="Right" Swiped="SwipeGestureRecognizer_Swiped"/>
+            </Image.GestureRecognizers>
+        </Image>
+
+        <Label x:Name="direction"
+            HorizontalOptions="Center"
+            FontSize="Large"
+            />
+    </VerticalStackLayout>
+
+
+</ContentPage>
