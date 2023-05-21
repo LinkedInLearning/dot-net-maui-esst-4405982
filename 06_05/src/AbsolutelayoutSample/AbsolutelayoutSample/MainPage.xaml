@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AbsolutelayoutSample.MainPage">
+
+    <AbsoluteLayout>
+
+        <Rectangle
+            AbsoluteLayout.LayoutBounds="0, 0, 200, 100"
+            BackgroundColor="Aqua"/>
+        <Rectangle
+            AbsoluteLayout.LayoutBounds="100, 50, 200, 50"
+            BackgroundColor="Blue"/>
+        <Rectangle
+            AbsoluteLayout.LayoutBounds="200, 150, 300, 250"
+            BackgroundColor="Red"/>
+    </AbsoluteLayout>
+
+</ContentPage>
