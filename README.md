@@ -1,8 +1,8 @@
-# Visual Studio 2022 基本講座
-LinkedInラーニングの「Visual Studio 2022 基本講座」コース用のリポジトリです。このコースは [LinkedInラーニング][lil-course-url]で視聴できます。
+# .NET MAUI 基本講座
+LinkedInラーニングの「.NET MAUI 基本講座」コース用のリポジトリです。このコースは [LinkedInラーニング][lil-course-url]で視聴できます。
 
-![Visual Studio 2022 基本講座][lil-thumbnail-url] 
-Visual Studio 2022は.NET開発のための最新のIDEです。64bit化されこれまで以上に快適に開発が行えるようになりました。このコースではVisual Studio 2022の基本から機械学習を利用した最新の機能まで幅広く紹介します。豊富な補完機能を備えたコードエディターの活用や、デバッグを効率よく進めることができるウィンドウの表示、便利なオプションなどをわかりやすく解説します。このコースを学習することでVisual StudioがどれほどパワフルなIDEかを知ることができるでしょう。
+![.NET MAUI 基本講座][lil-thumbnail-url] 
+.NET MAUIはWindowsやiOS、Androidなどのマルチプラットフォームに対応したアプリケーションを作成できるフレームワークです。C#とXAMLを使い、ひとつのコードベースでネイティブ プラットフォームのようなアプリを構築します。このコースでは.NET MAUIの基本的な使い方について学びます。WindowsやMacを利用した開発環境の準備方法から、画面を定義するためのコントロールの使い方、デバイス情報やセンサー情報を取得する方法をわかりやすく解説します。このコースを学習することで.NET MAUIを使ってすぐに開発を始めることができるようになるでしょう。
 
 ## リポジトリの使い方
 このリポジトリには必要に応じてブランチが設けられています。ブランチのポップアップメニューを使用して、使用するブランチに切り替えたあとにコースを視聴してください。またURLに`「/tree/ブランチ名」`を追加することで、アクセスしたいブランチに移動することも可能です。
@@ -24,7 +24,7 @@ Visual Studio 2022は.NET開発のための最新のIDEです。64bit化され�
 	次のコマンドで変更をコミットします：git commit -m "some message"
 
 ## インストール
-1. エクササイズファイルを使用するには`Visual Studio 2022以降`がインストールされている必要があります
+1. エクササイズファイルを使用するには`Visual Studio 2022以降`のインストール時またはVisual Studio Installerから設定できるワークロードから「.NETマルチプラットフォームアプリのUI開発」を選択する必要があります。
 	- [Visual Studio](https://visualstudio.microsoft.com/ja/downloads/)
 2. リポジトリをWindows PCにクローンしてください。
 3. フォルダーの中にある`ソリューションファイル（拡張子が.sln）`をVisual Studioで開くことで実行することができます。
@@ -38,4 +38,4 @@ _プログラマー、Microsoft MVP_
 この講師の他のコースを視聴する：[LinkedInラーニング](https://www.linkedin.com/learning/instructors/13315091)
 
 [lil-course-url]: https://www.linkedin.com/learning/visual-studio-2022-essential-training
-[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQEV4eNFQTE79A/learning-public-crop_675_1200/0/1681923716963?e=2147483647&v=beta&t=pJ9tRy4nzRYBpLtFQLwLmzLg5Fy7SRUYhsr7sjEJ-kA
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/D560DAQHqiDI4viUJxQ/learning-public-crop_675_1200/0/1690215687891?e=2147483647&v=beta&t=E_cm5fe4EvRJYIEFXAOD17n0fAugg2jmpFVNsos-fl4
